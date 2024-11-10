@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Image Map</title>
+    <style>
+       .image-map-container {
+    position: relative;
+    display: inline-block;
+}
+
+.popup-card {
+    display: none;
+    position: absolute;
+    background-color: white;
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    z-index: 10;
+}
+
+.btn {
+    display: block;
+    margin: 5px 0;
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    text-align: center;
+}
+
+.btn-secondary {
+    background-color: #6c757d;
+}
+
+    </style>
+</head>
+
+<body>
+    <div class="image-map-container">
+        <img src="newmap.png" usemap="#image-map">
+        <map name="image-map">
+
+            <area target="" alt="تبوك" title="تبوك" href="#تبوك" coords="164,316,37" onmouseover="display(this)" onmouseleave="hideCard()" shape="circle" data-description="Hello,bye "> </area>
+            <area target="" alt="المدينة المنورة" title="المدينة المنورة" href="#المدينة المنور" onmouseover="display(this)" onmouseleave="hideCard()" coords="353,490,37" shape="circle" data-description="Hello,bye ">
+            
+        </area>
+            <area target="" alt="جده" title="جده" href="#" coords="422,598,37" onmouseover="display(this)" onmouseleave="hideCard()" shape="circle" data-description="Hello,bye "></area>
+            <area target="" alt="مكة المكرمة"  title="مكة المكرمة" href="#مكة" coords="516,685,37" onmouseover="display(this)" onmouseleave="hideCard()" shape="circle" data-description="Hello,bye "></area>
+            <area target="" alt="الباحة" title="الباحة" href="#الباحة" coords="596,707,37" onmouseover="display(this)" onmouseleave="hideCard()" shape="circle" data-description="Hello,bye "></area>
+            <area target="" alt="جيزان" title="جيزان" href="#جيزان" coords="649,815,37" onmouseover="display(this)" onmouseleave="hideCard()" shape="circle"  data-description="Hello,bye "></area>
+            <area target="" alt="نجران" title="نجران" href="#نجران" coords="757,785,37" onmouseover="display(this)" onmouseleave="hideCard()" shape="circle"  data-description="Hello,bye "></area>
+            <area target="" alt="سكاكا" title="" href="#سكاكا" coords="501,261,37" onmouseover="display(this)" onmouseleave="hideCard()" shape="circle"  data-description="Hello,bye "></area>
+            <area target="" alt="منطقة الحدود الجنوبية" title="" href="#" coords="659,214,36" onmouseover="display(this)" onmouseleave="hideCard()" shape="circle"  data-description="Hello,bye "></area>
+            <area target="" alt="حائل" title="" href="#حائل" coords="661,359,36" onmouseover="display(this)" onmouseleave="hideCard()" shape="circle"  data-description="Hello,bye "></area>
+            <area target="" alt="البريدة" title="" href="#البريدة" coords="688,457,36" onmouseover="display(this)" onmouseleave="hideCard()" shape="circle"  data-description="Hello,bye "></area>
+            <area target="" alt="الرياض" title="" href="#الرياض" coords="964,438,36" onmouseover="display(this)" onmouseleave="hideCard()" shape="circle"  data-description="Hello,bye "></area>
+            <area target="" alt="الخبر" title="" href="#الخبر" coords="1094,351,36" onmouseover="display(this)" onmouseleave="hideCard()" shape="circle"  data-description="Hello,bye "></area>
+
+          
+            
+        </map>
+        <div id="popup-card" class="popup-card">
+            <p id="popup-info">
+            
+
+
+            </p> <button class="btn btn-primary" onclick="moreInfo()">More Info</button> <button
+                class="btn btn-secondary" onclick="contactUs()">Contact Us</button>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+
+</html>

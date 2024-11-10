@@ -1,0 +1,143 @@
+/*
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+
+header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1em 0;
+}
+
+main {
+    padding: 2em;
+}
+
+section {
+    margin-bottom: 2em;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1em 0;
+}
+
+.map-container {
+    position: relative;
+    width: 800px;
+    height: 600px;
+}
+
+.map-image {
+    width: 100%;
+    height: auto;
+}
+
+.pin {
+    position: absolute;
+    width: 22px;
+    height: 22px;
+    background-size: cover;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.pin .popup-content {
+    display: block;
+    position: absolute;
+    top: -10px;
+ 
+    left: calc(100% + 10px);
+ 
+    background-color: white;
+    border: 1px solid #ccc;
+    padding: 10px;
+    z-index: 10;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    white-space: nowrap;
+ 
+}
+.pin:hover .popup-content {
+    display: block;
+}
+
+.pin1 {
+    top: 80px;
+    left: 41px;
+    background-image: url('icon.png');
+}
+
+.pin2 {
+    top: 139px;
+    left: 149px;
+    background-image: url('icon.png');
+}
+
+.pin3 {
+    top: 189px;
+    left: 566px;
+    background-image: url('icon.png');
+}
+
+.pin4 {
+    top: 222px;
+    left: 167px;
+    background-image: url('icon.png');
+}
+
+.pin5 {
+    top: 99px;
+    left: 474px;
+    background-image: url('icon.png');
+}
+
+.pin6 {
+    top: 309px;
+    left: 441px;
+    background-image: url('icon.png');
+
+}
+
+.pin7 {
+    top: 135px;
+    left: 397px;
+    background-image: url('icon.png');
+}
+
+.card { background-color: white; border: 1px solid #ccc; padding: 10px; border-radius: 8px; box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2); white-space: nowrap; } #block-gca-gov-qdratnaalmwssatyt-2 .card p { margin: 0 0 10px; } #block-gca-gov-qdratnaalmwssatyt-2 .card .btn { display: inline-block; padding: 5px 10px; margin: 5px 0; text-align: center; text-decoration: none; background-color: #007bff; color: white; border-radius: 4px; border: none; cursor: pointer; } #block-gca-gov-qdratnaalmwssatyt-2 .card .btn-secondary { background-color: #6c757d; }
+*/
+.map-container {
+    position: relative;
+    display: inline-block;
+}
+
+.map-image {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.card{
+    display: none;
+    position: absolute;
+    top: -10px;
+
+    left: calc(100% + 10px);
+ 
+    background-color: white;
+    border: 1px solid #ccc;
+    padding: 10px;
+    z-index: 10;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    white-space: nowrap;
+}
