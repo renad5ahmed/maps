@@ -9,9 +9,12 @@ document.addEventListener('DOMContentLoaded', () => {
         const[z1,z2]=test.map(String);
 
         popupInfo.innerHTML = `
-            <p>Location: ${area.alt}</p>
-            <p>Description: ${z2}</p>
-            <p>Coordinates: ${coords.join(', ')}</p>
+            <p> <strong> ${area.alt}</strong></p>
+            <p>${z1}
+            </p>
+            <p> ${z2}
+          
+            </p>
         `;
 
         popupCard.style.display = 'block';
