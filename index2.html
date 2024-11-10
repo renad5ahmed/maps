@@ -6,39 +6,45 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Interactive Image Map</title>
     <style>
-       .image-map-container {
-    position: relative;
-    display: inline-block;
-}
+        .image-map-container {
+            position: relative;
+            display: inline-block;
+        }
 
-.popup-card {
-    display: none;
-    position: absolute;
-    background-color: white;
-    border: 1px solid #ccc;
-    padding: 10px;
-    border-radius: 8px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
-    z-index: 10;
-}
+        .popup-card {
+            display: none;
+            position: absolute;
+            background-color: white;
+            border: 1px solid #ccc;
+            padding: 10px 21px;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+            z-index: 10;
+            width: 20%;
+        }
 
-.btn {
-    display: block;
-    margin: 5px 0;
-    padding: 10px;
-    background-color: #007bff;
-    color: white;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    text-align: center;
-}
+        #popup-info {
+            padding: 0px 4px;
+        }
 
-.btn-secondary {
-    background-color: #6c757d;
-}
+        .buttonn {
+            display: block;
+            margin: 5px 0;
+            background-color: white;
+            padding: 10px;
+            border: 1px solid grey;
+            border-radius: 4px;
+            cursor: pointer;
+            text-align: center;
+        }
 
+        .btn-color9 {
+            background-color: #1B8354;
+            color: white;
+
+        }
     </style>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
 </head>
 
 <body>
@@ -46,36 +52,183 @@
         <img src="newmap.png" usemap="#image-map">
         <map name="image-map">
 
-            <area target="" alt="تبوك" title="تبوك" href="#تبوك" coords="164,316,37" onmouseover="display(this)" onmouseleave="hideCard()" shape="circle" data-description="Hello,bye "> </area>
-            <area target="" alt="المدينة المنورة" title="المدينة المنورة" href="#المدينة المنور" onmouseover="display(this)" onmouseleave="hideCard()" coords="353,490,37" shape="circle" data-description="Hello,bye ">
-            
-        </area>
-            <area target="" alt="جده" title="جده" href="#" coords="422,598,37" onmouseover="display(this)" onmouseleave="hideCard()" shape="circle" data-description="Hello,bye "></area>
-            <area target="" alt="مكة المكرمة"  title="مكة المكرمة" href="#مكة" coords="516,685,37" onmouseover="display(this)" onmouseleave="hideCard()" shape="circle" data-description="Hello,bye "></area>
-            <area target="" alt="الباحة" title="الباحة" href="#الباحة" coords="596,707,37" onmouseover="display(this)" onmouseleave="hideCard()" shape="circle" data-description="Hello,bye "></area>
-            <area target="" alt="جيزان" title="جيزان" href="#جيزان" coords="649,815,37" onmouseover="display(this)" onmouseleave="hideCard()" shape="circle"  data-description="Hello,bye "></area>
-            <area target="" alt="نجران" title="نجران" href="#نجران" coords="757,785,37" onmouseover="display(this)" onmouseleave="hideCard()" shape="circle"  data-description="Hello,bye "></area>
-            <area target="" alt="سكاكا" title="" href="#سكاكا" coords="501,261,37" onmouseover="display(this)" onmouseleave="hideCard()" shape="circle"  data-description="Hello,bye "></area>
-            <area target="" alt="منطقة الحدود الجنوبية" title="" href="#" coords="659,214,36" onmouseover="display(this)" onmouseleave="hideCard()" shape="circle"  data-description="Hello,bye "></area>
-            <area target="" alt="حائل" title="" href="#حائل" coords="661,359,36" onmouseover="display(this)" onmouseleave="hideCard()" shape="circle"  data-description="Hello,bye "></area>
-            <area target="" alt="البريدة" title="" href="#البريدة" coords="688,457,36" onmouseover="display(this)" onmouseleave="hideCard()" shape="circle"  data-description="Hello,bye "></area>
-            <area target="" alt="الرياض" title="" href="#الرياض" coords="964,438,36" onmouseover="display(this)" onmouseleave="hideCard()" shape="circle"  data-description="Hello,bye "></area>
-            <area target="" alt="الخبر" title="" href="#الخبر" coords="1094,351,36" onmouseover="display(this)" onmouseleave="hideCard()" shape="circle"  data-description="Hello,bye "></area>
+            <area target="" alt="فرع تبوك" title="تبوك" href="#تبوك" coords="164,316,37" onmouseover="display(this)"
+                onmouseleave="hideCard()" shape="circle" data-description=" 
+            رقم الهاتف:
+            <strong>
+            0144270670,
+            </strong>
+            العنوان:
+            <strong> 
+                عمر بن الخطاب، مروج الأمير، تبوك
+            </strong>" </area>
+            <area target="" alt="فرع المدينة المنورة" title="المدينة المنورة" href="#المدينة المنور"
+                onmouseover="display(this)" onmouseleave="hideCard()" coords="353,490,37" shape="circle"
+                data-description=" 
+            رقم الهاتف:
+            <strong>
+            0148652849,
+            </strong>
+            العنوان:
+            <strong> 
+            حي 2783 حميد بن ذى حدان، العاقول، المدينة المنورة 42241 8064،
+            </strong>">
+            </area>
+            <area target="" alt="فرع جده" title="جده" href="#" coords="422,598,37" onmouseover="display(this)"
+                onmouseleave="hideCard()" shape="circle" data-description="
+            رقم الهاتف:
+            <strong>
+            لا يوجد,
+            </strong>
+            العنوان:
+            <strong> 
+           لا يوجد
+            </strong>"></area>
 
-          
+            <area target="" alt="فرع مكة فرع المكرمة" title="مكة المكرمة" href="#مكة" coords="516,685,37"
+                onmouseover="display(this)" onmouseleave="hideCard()" shape="circle" data-description="
+            رقم الهاتف:
+            <strong>
+            0126606242,
+            </strong>
+            العنوان:
+            <strong> 
+            G5G9+Q3C، البراءه، الحمراء، جدة 23323
+            </strong>">
+            </area>
+            <area target="" alt="فرع الباحة" title="الباحة" href="#الباحة" coords="596,707,37"
+                onmouseover="display(this)" onmouseleave="hideCard()" shape="circle" data-description="
+ 
             
+            رقم الهاتف:
+            <strong>
+            0177390414,
+            </strong>
+            العنوان:
+            <strong> 
+            Ghabah Shuhbaha Rd, Al Bahah 65721
+
+            </strong>">
+            </area>
+            <area target="" alt="فرع جيزان" title="جيزان" href="#جيزان" coords="649,815,37" onmouseover="display(this)"
+                onmouseleave="hideCard()" shape="circle" data-description="
+                        
+            رقم الهاتف:
+            <strong>
+            0173234030,
+            </strong>
+            العنوان:
+            <strong> 
+            VH5R+43J، السويس، جازان 82615
+
+            </strong>">
+            </area>
+            <area target="" alt="فرع نجران" title="نجران" href="#نجران" coords="757,785,37" onmouseover="display(this)"
+                onmouseleave="hideCard()" shape="circle" data-description="
+                        
+            رقم الهاتف:
+            <strong>
+            0175221052,
+            </strong>
+            العنوان:
+            <strong> 
+            JFWC+P92, Alghuwayla Agricutural Subdivision 66433
+            </strong>">
+            </area>
+            <area target="" alt="فرع سكاكا" title="" href="#سكاكا" coords="501,261,37" onmouseover="display(this)"
+                onmouseleave="hideCard()" shape="circle" data-description="
+           رقم الهاتف:
+           <strong>
+           لا يوجد,
+           </strong>
+           العنوان:
+           <strong> 
+          لا يوجد
+           </strong>"></area>
+
+            <area target="" alt="فرع منطقة الحدود الشمالية" title="" href="#" coords="659,214,36"
+                onmouseover="display(this)" onmouseleave="hideCard()" shape="circle" data-description="
+رقم الهاتف:
+<strong>
+0146626226
+</strong>
+,العنوان
+<strong>
+    الخليج، عرعر 73212
+12641
+</strong>
+"></area>
+            <area target="" alt="فرع حائل" title="" href="#حائل" coords="661,359,36" onmouseover="display(this)"
+                onmouseleave="hideCard()" shape="circle" data-description="
+رقم الهاتف:
+<strong>
+0165439855
+</strong>
+,العنوان
+<strong>
+الجامعة، الرياض
+12641
+</strong>
+"></area>
+            <area target="" alt="فرع البريدة" title="" href="#البريدة" coords="688,457,36" onmouseover="display(this)"
+                onmouseleave="hideCard()" shape="circle" data-description="
+رقم الهاتف:
+<strong>
+لا يوجد,
+</strong>
+العنوان:
+<strong> 
+لا يوجد
+</strong>"></area>
+
+            <area target="" alt="فرع الرياض" title="" href="#الرياض" coords="964,438,36" onmouseover="display(this)"
+                onmouseleave="hideCard()" shape="circle" data-description="
+رقم الهاتف:
+<strong>
+114056770
+</strong>
+,العنوان
+<strong>
+الجامعة، الرياض
+12641
+</strong>
+"></area>
+            <area target="" alt="فرع الخبر" title="" href="#الخبر" coords="1094,351,36" onmouseover="display(this)"
+                onmouseleave="hideCard()" shape="circle" data-description="رقم الهاتف:
+رقم الهاتف:
+<strong>
+لا يوجد,
+</strong>
+العنوان:
+<strong> 
+لا يوجد
+</strong>"></area>
+
         </map>
-        <div id="popup-card" class="popup-card">
-             <img src="icon.png">
-            <p id="popup-info">
-            
 
+        <div id="popup-card" class="popup-card d-flex flex-column align-items-end pr-4" style="width: 21%;">
+            <div class="row pb-3">
+                <img src="icon.png">
+            </div>
+            <div class="row  d-flex flex-column justify-content-center">
+                <div id="popup-info" dir="rtl" class="text-right"></div>
+            </div>
+            <div class="row d-flex justify-content-between w-100">
+                <button class="buttonn btn-color9" onclick="moreInfo()">
+                    <strong>
+                        الإتصال بالفرع
+                    </strong>
+                </button>
+                <button class="buttonn " onclick="contactUs()">
+                    <strong>
+                        الحصول على الإتجاهات
+                    </strong>
+                </button>
+            </div>
 
-            </p> <button class="btn btn-primary" onclick="moreInfo()">More Info</button> <button
-                class="btn btn-secondary" onclick="contactUs()">Contact Us</button>
         </div>
     </div>
-    
+
     <script src="script.js"></script>
 </body>
 
